@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História Cultural</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>História e Cultura de Salvador</h1>
+        <nav>
+            <a href="{% url 'home' %}">Página Inicial</a>
+            <a href="{% url 'atracoes' %}">Atrações</a>
+            <a href="{% url 'historia' %}">História e Cultura</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Colonização Portuguesa</h2>
+        <p>Salvador, fundada em 1549 por Tomé de Souza, foi a primeira capital do Brasil e desempenhou um papel crucial na colonização portuguesa. Localizada estrategicamente na baía de Todos-os-Santos, a cidade não só serviu como um importante centro administrativo e militar, mas também como um entreposto vital para o comércio com as nações europeias e africanas. A influência portuguesa é evidente na arquitetura colonial de Salvador, onde o Pelourinho, um dos bairros mais emblemáticos da cidade, apresenta uma impressionante coleção de edifícios barrocos. As igrejas, como a Igreja de São Francisco e a Catedral Basílica, são testemunhas da riqueza e sofisticação do período colonial, com suas fachadas ornamentadas e interiores exuberantes que refletem a opulência da época. A herança portuguesa é visível nas ruas de paralelepípedos e nas fachadas coloridas das casas, que ainda preservam o charme do passado colonial.</p>
+        
+        <h2>Cultura Afro-Brasileira</h2>
+        <p>Salvador é amplamente reconhecida como o coração pulsante da cultura afro-brasileira. A cidade foi um dos principais centros de tráfico de escravos durante o período colonial, e sua herança africana é profundamente enraizada na vida cultural e social da cidade. Os traços da cultura africana são evidentes em vários aspectos da vida em Salvador, desde a música e a dança até a culinária. O Candomblé, uma religião afro-brasileira, desempenha um papel central na vida espiritual de muitos soteropolitanos e é celebrado em cerimônias coloridas e cheias de ritmo que atraem visitantes de todo o mundo. A capoeira, uma forma de luta e dança desenvolvida pelos escravizados africanos, é praticada nas ruas e praças da cidade, enquanto a culinária afro-brasileira, com pratos como acarajé e vatapá, oferece uma experiência gastronômica única e deliciosa. A influência africana moldou Salvador em uma cidade vibrante e multicultural, onde as tradições ancestrais são preservadas e celebradas com orgulho.</p>
+        
+        <h2>Festivais e Eventos</h2>
+        <p>Salvador é famosa por seus festivais vibrantes, entre os quais o Carnaval se destaca como um dos maiores e mais animados do mundo. Este evento, que ocorre anualmente em fevereiro ou março, transforma a cidade em uma explosão de cor, música e dança. As ruas são tomadas por milhões de foliões que participam de desfiles, blocos e trios elétricos, criando um ambiente festivo e contagiante. A música é uma parte essencial do Carnaval de Salvador, com ritmos como o axé, samba e pagode dominando as apresentações. Além do Carnaval, Salvador também celebra outros eventos culturais de grande importância, como o Festival de Iemanjá, dedicado à deusa das águas, que acontece no dia 2 de fevereiro e reúne devotos em uma cerimônia emocionante na Praia do Rio Vermelho. Outros eventos notáveis incluem o Festival da Primavera e a Festa de Nossa Senhora da Conceição da Praia, que reforçam a rica tapeçaria cultural e religiosa da cidade. Cada festival é uma oportunidade para os habitantes e visitantes se conectarem com a vibrante tradição cultural de Salvador e experimentarem a hospitalidade calorosa da cidade.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Salvador Tourism</p>
+    </footer>
+</body>
+</html>

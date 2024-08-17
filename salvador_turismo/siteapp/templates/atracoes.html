@@ -1,0 +1,64 @@
+<!-- atracoes.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principais Atrações de Salvador</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Principais Atrações de Salvador</h1>
+        <nav>
+            <a href="{% url 'home' %}">Página Inicial</a>
+            <a href="{% url 'atracoes' %}">Atrações</a>
+            <a href="{% url 'historia' %}">História e Cultura</a>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="photo">
+                <p>Elevador Lacerda</p>
+                <img src="{% static 'img/Elevador.jpg' %}" alt="Elevador Lacerda1">
+            </div>
+            <div class="photo">
+            <p>Farol da Barra</p>
+                <img src="{% static 'img/Farol.jpg' %}" alt="Farol da Barra">
+            </div>
+            <div class="photo">
+                <p>Pelourinho</p>
+                <img src="{% static 'img/Pelourinho.jpg' %}" alt="Pelourinho">
+            </div>
+            <div class="photo">
+                <p>Dique do Tororó</p>
+                <img src="{% static 'img/Dique.jpg' %}" alt="Dique do Tororó">
+            </div>
+            <div class="photo">
+                <p>Igreja de Nosso Senhor do Bonfim</p>
+                <img src="{% static 'img/Igreja.jpg' %}" alt="Igreja de Nosso Senhor do Bonfim">
+            </div>
+            <div class="photo">
+                <p>Fundação Casa de Jorge Amado</p>
+                <img src="{% static 'img/JorgeAmado.jpg' %}" alt="Fundação Casa de Jorge Amado">
+            </div>
+            <div class="photo">
+                <p>Mercado Modelo de Salvador</p>
+                <img src="{% static 'img/MercadoModelo.jpg' %}" alt="Mercado Modelo de Salvador">
+            </div>
+            <div class="photo">
+                <p>Igreja de São Francisco</p>
+                <img src="{% static 'img/SaoFrancisco.jpg' %}" alt="Igreja de São Francisco">
+            </div>
+            <div class="photo">
+                <p>Solar do Unhão</p>
+                <img src="{% static 'img/Solar.jpg' %}" alt="Solar do Unhão">
+            </div>
+            <!-- Adicione mais fotos conforme necessário -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Salvador Tourism</p>
+    </footer>
+</body>

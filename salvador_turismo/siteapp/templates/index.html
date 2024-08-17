@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo a Salvador</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo a Salvador</h1>
+        <nav>
+            <a href="{% url 'home' %}">Página Inicial</a>
+            <a href="{% url 'atracoes' %}">Atrações</a>
+            <a href="{% url 'historia' %}">História e Cultura</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Descubra Salvador</h2>
+            <p>Salvador é uma cidade vibrante e cheia de vida, conhecida por suas praias paradisíacas, rica história e cultura afro-brasileira.</p>
+        </section>
+        <section>
+            <h2>Por que visitar?</h2>
+            <p>Com uma mistura única de tradição e modernidade, Salvador oferece uma experiência inesquecível para todos os visitantes.</p>
+        </section>
+        <section>
+            <h2>Principais Atrações</h2>
+            <ul>
+                <h3>Pelourinho</h3>
+                <p>O Pelourinho é um dos bairros mais famosos de Salvador, conhecido por sua arquitetura colonial e rica vida cultural.</p>
+                <div class="photo">
+                    <img src = "{% static 'img/Pelourinho.jpg' %}" alt = "Pelourinho" widht="250" height="250">
+                </div>
+                <h3>Elevador Lacerda</h3>
+                <p>O Elevador Lacerda conecta a Cidade Baixa à Cidade Alta e oferece uma vista panorâmica incrível da baía de Todos os Santos.</p>
+                <div class="photo">
+                    <img src = "{% static 'img/Elevador.jpg' %}" alt = "Elevador Lacerda" widht="250" height="250">
+                </div>               
+                <h3>Farol da Barra</h3>
+                <p>O Farol da Barra é um dos marcos históricos de Salvador e oferece uma vista deslumbrante do mar e da cidade.</p>
+                <div class="photo">
+                    <img src = "{% static 'img/Farol.jpg' %}" alt = "Farol da Barra" widht="250" height="250">
+                </div>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Salvador Tourism</p>
+    </footer>
+</body>
+</html>
